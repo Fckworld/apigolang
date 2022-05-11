@@ -13,7 +13,7 @@ import (
 type GUITAR struct {
 }
 type guitarra struct {
-	ID      int    `json:ID`
+	ID      int    `json:ID gorm:"primaryKey"`
 	Name    string `json:Name`
 	Content string `json:Content`
 }
